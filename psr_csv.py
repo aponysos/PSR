@@ -55,7 +55,7 @@ with open(OUTPUT_FILE_NAME, 'w', newline='') as output:
     writer = csv.writer(output)
     for p in projects:
         writer.writerow([p.project_no, p.project_type, p.project_name, \
-            p.mananger, p.limit, '', '实施阶段', p.project_rop])
+            p.mananger, p.limit, p.project_rop])
         
 
 logging.info('Stop PSR_CSV logging ...')
