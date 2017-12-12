@@ -35,6 +35,7 @@ class Project():
             if (self.sheet.cell(i, 2).value == '本期进展' and self.sheet.cell(i, 3).value == '下期计划'):
                 self.progress = self.cell_value(i + 1, 2)
                 self.plan = self.cell_value(i + 1, 3)
+                break
 
 logging.info('Start PSR_CSV logging ...')
 
