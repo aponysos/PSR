@@ -1,4 +1,4 @@
-#!
+#! python3.6
 
 import logging
 import sys
