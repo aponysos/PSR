@@ -20,7 +20,7 @@ logging.info('Start PSR logging ...')
 logging.info('sys.argv: %s', sys.argv)
 logging.info('sys.path: %s', sys.path)
 
-mapper = [ \
+mapper0 = [ \
     1, 2, 3, 4, 5, 31, \
     34, 6, 7, 8, 9, 0, 0, 0, 0, \
     42, 62, 66, \
@@ -28,6 +28,8 @@ mapper = [ \
     89, 93, 96, 115, 119, 122, \
     105, 109, 131, 135
     ]
+
+mapper = [(i + 2 if i != 0 else 0) for i in mapper0]
 
 class Project():
     def __init__(self, sheet):
