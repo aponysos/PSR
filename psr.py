@@ -10,7 +10,7 @@ LOGGING_FORMAT =        '[%(levelname)7s] %(asctime)s %(msecs)3d ' + \
 LOGGING_DATE_FORMAT =   '%Y-%m-%d %H:%M:%S'
 
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format=LOGGING_FORMAT,
     datefmt=LOGGING_DATE_FORMAT,
     filename='psr.log',
